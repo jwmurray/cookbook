@@ -1,0 +1,156 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'data'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "data",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'list2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=list2",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "list2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'list_comprehensions'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=list_comprehensions",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "list_comprehensions",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'unpack'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=unpack",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "unpack",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'unpack'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=unpack",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "unpack",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'data'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=data",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "data",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'data'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=data",
+                    "--package=data"
+                ],
+                "filter": {
+                    "name": "data",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'text'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=text"
+                ],
+                "filter": {
+                    "name": "text",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
